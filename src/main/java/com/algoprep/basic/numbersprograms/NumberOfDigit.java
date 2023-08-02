@@ -1,4 +1,4 @@
-package com.algoprep.basic.problemsolving;
+package com.algoprep.basic.numbersprograms;
 
 public class NumberOfDigit {
     public static int countNumberOfDigit(int num) {

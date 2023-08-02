@@ -1,4 +1,4 @@
-package com.algoprep.basic.problemsolving;
+package com.algoprep.basic.numbersprograms;
 
 public class Runner {
     public static void main(String[] args) {

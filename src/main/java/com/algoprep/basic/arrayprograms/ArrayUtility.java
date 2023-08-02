@@ -22,4 +22,18 @@ public class ArrayUtility {
 
         return max;
     }
+    public static void swapElementInArray(int[] arr){
+        arr[0] = arr[0]+arr[1];
+        arr[1] = arr[0]-arr[1];
+        arr[0] = arr[0]-arr[1];
+    }
+    public static void reverseElementsInArray(int[] arr){
+        int j = arr.length -1 ;
+        for (int i = 0; i < j; i++) {
+                int temp = arr[i];
+                arr[i] =arr[j];
+                arr[j]=temp;
+                j-- ;
+        }
+    }
 }

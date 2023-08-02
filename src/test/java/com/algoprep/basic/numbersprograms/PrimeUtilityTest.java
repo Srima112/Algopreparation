@@ -1,6 +1,5 @@
-package com.algoprep.basic.problemsolving;
+package com.algoprep.basic.numbersprograms;
 
-import com.algoprep.basic.problemsolving.PrimeUtility;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

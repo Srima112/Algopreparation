@@ -36,4 +36,23 @@ public class ArrayUtilityTest {
         int[] arr = {-10, -20, -30, -40};
         Assert.assertEquals(-10, ArrayUtility.maxElementInArray(arr));
     }
+
+    @Test
+    public void swapArrayElement() {
+        int[] arr = {10,20};
+        ArrayUtility.swapElementInArray(arr);
+        Assert.assertEquals(20, arr[0]);
+        Assert.assertEquals(10, arr[1]);
+    }
+
+    @Test
+    public void reverseArray(){
+        int[] arr = {10,20,30,40};
+        ArrayUtility.reverseElementsInArray(arr);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(arr[i]);
+
+        }
+
+    }
 }

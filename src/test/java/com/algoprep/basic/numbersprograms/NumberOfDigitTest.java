@@ -1,4 +1,4 @@
-package com.algoprep.basic.problemsolving;
+package com.algoprep.basic.numbersprograms;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
