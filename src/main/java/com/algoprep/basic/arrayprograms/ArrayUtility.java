@@ -28,12 +28,16 @@ public class ArrayUtility {
         arr[0] = arr[0]-arr[1];
     }
     public static void reverseElementsInArray(int[] arr){
-        int j = arr.length -1 ;
-        for (int i = 0; i < j; i++) {
-                int temp = arr[i];
-                arr[i] =arr[j];
-                arr[j]=temp;
-                j-- ;
+        int ending_point = arr.length -1 ;
+        int starting_point = 0;
+
+        // always try to use while in case of we have 2 or more variable , as it is easier to write while rather than for loop
+        while(starting_point<ending_point) {
+                int temp = arr[starting_point];
+                arr[starting_point] =arr[ending_point];
+                arr[ending_point]=temp;
+                starting_point++;
+                ending_point-- ;
         }
     }
 }
