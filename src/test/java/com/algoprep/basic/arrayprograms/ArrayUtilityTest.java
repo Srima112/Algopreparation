@@ -55,4 +55,33 @@ public class ArrayUtilityTest {
         }
 
     }
+
+    @Test
+    public void rotateAnArray(){
+        int[] arr = {3, -2, 1 , 4, 6 , 9 ,8 };
+        ArrayUtility.rotateAnArray(arr,3);
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]);
+            System.out.print(" "+",");
+        }
+        //output : 6 ,9 ,8 ,3 ,-2 ,1 ,4
+    }
+
+    @Test
+    public void findSumOfTwo_1(){
+        int[] arr = {3, -2, 1 , 4, 6 , 9 ,8 };
+        Assert.assertTrue(ArrayUtility.twoSum(arr,17));
+    }
+
+    @Test
+    public void findSumOfTwo_2(){
+        int[] arr = {3, -2, 1 , 4, 6 , 9 ,8 };
+        Assert.assertTrue(ArrayUtility.twoSum(arr,1));
+    }
+
+    @Test
+    public void findSumOfTwo_3(){
+        int[] arr = {3, -2, 1 , 4, 6 , 9 ,8 };
+        Assert.assertFalse(ArrayUtility.twoSum(arr,18));
+    }
 }
